@@ -5,7 +5,7 @@ exports.getAll_get = async (req, res) => {
     console.log(allSubReddits);
     res.render('template', { 
         locals: {
-            title: "SubReddits",
+            title: "",
             is_logged_in: req.session.is_logged_in,
             subRedditList: allSubReddits,
             first_name: req.session.first_name,
@@ -26,7 +26,7 @@ exports.getOne_get = async (req, res) => {
     console.log("this one subreddit is",oneSubReddit);
     res.render('template', { 
         locals: {
-            title: "Subreddit",
+            title: "",
             is_logged_in: req.session.is_logged_in,
             oneSubRedditList: oneSubReddit,
             first_name: req.session.first_name,
