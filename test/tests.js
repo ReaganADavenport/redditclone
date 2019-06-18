@@ -60,7 +60,7 @@ describe('Post models tests', () => {
     });
 
     it('should get all the comments for a single post under a particular subreddit', async() => {
-        const allComments = await Post.getAllComments(1,1);
+        const allComments = await Post.getAllComments(1,3);
         console.log('The comments are', allComments);
         expect(allComments).to.not.be.an('undefined');
     });
